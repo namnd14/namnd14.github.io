@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nguyen Dinh Nam</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+    <script type="text/javascript">
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <br>
+
+    <div style="width:100%;float:left;margin-bottom:1.5em" align="justify">
+        <tr tyle="width:100%">
+            <!-- <td><img alt="alt" src="image.jpeg"
+                    style="display:inline;margin:5px 10px 0px 0px;float:left" width="150"></td>-->
+            <td>
+                <div>
+                    <h2 style="margin-top:0em;margin-bottom:0.75em">Nguyen Dinh Nam</h2>
+                </div>
+                <div>Software Engineer</div>
+                <div style="margin-top:0em;margin-bottom:0.75em">
+                    <a href="https://cmcglobal.com.vn/" target="_blank">CMC Global</a>, Vietnam
+                </div>
+                <div><b>Email:</b> namnguyennd7428@gmail.com</div>
+                <div>
+                    [<a href="https://namnd14.github.io/NamND_Software_Engineer.pdf" target="_blank"><b>Resume</b></a>]
+                    [<a href="https://github.com/namnd14" target="_blank"><b>Github</b></a>]
+                    [<a href="https://leetcode.com/u/namnd14/" target="_blank"><b>Leetcode</b></a>]
+                    [<a href="https://www.linkedin.com/in/namnd14/" target="_blank">LinkedIn</a>]
+                    [<a href="https://x.com/namnd28" target="_blank"><b>X</b></a>]
+                </div>
+            </td>
+        </tr>
+
+        <br>
+
+        <!-- <div style="float:left" class="tab">
+            <button class="tablinks" onclick="openTab(event, 'short-bio')"><b>Short Bio</b></button>
+            <button href="/#experience"><b>Experience</b></button>
+            <button class="tablinks" onclick="openTab(event, 'Publications')"><b>Publications</b></button>
+            <button class="tablinks" onclick="openTab(event, 'Talks')"><b>Talks</b></button>
+            <button class="tablinks" onclick="openTab(event, 'service')"><b>Academic Service</b></button>
+        </div>
+
+        <br> -->
+
+        <div id="short-bio" class="tabcontent">
+            <br>
+            I'm a Fullstack Software Engineer at <a href="https://cmcglobal.com.vn/" target="_blank">CMC Global</a>, Vietnam.
+            Previously, ...
+        </div>
+
+        <div id="experience">
+            <h3> Experience </h3>
+
+            <ul>
+                <li>10/2023 — present: <b>Fullstack Software Engineer</b>, CMC Global, Hanoi, Vietnam. </li>
+                <li>06/2022 — 07/2023: <b>Fullstack Software Engineer</b>, Ascend Technology, Hanoi, Vietnam.</li>
+                <li>04/2021 — 05/2022: <b>Fullstack Software Engineer</b>, IMIP Technology and Solution Consultancy, Hanoi, Vietnam. </li>
+                <li>07/2019 — 03/2021: <b>Frontend Software Engineer</b>, FPT Software, Hanoi, Vietnam. </li>
+            </ul>
+        </div>
+
+        <div id="stack">
+            <h3> Stack </h3>
+
+            <ul>
+                <li><b>Programming: </b>Java, Spring, Spring Boot, SQL Server, MySQL, Tomcat, Maven,
+                    JSP, HTML, CSS,
+                    Javascript, Typescript, Angular, React, AWS, Terraform</li>
+                <li><b>English: </b>Proficiency</li>
+            </ul>
+        </div>
+
+        <div id="education">
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    2014 — 2019: <b>The Degree of Engineer in Electronics and Telecommunications</b>, Hanoi University
+                    of Science and Technology, Vietnam.
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
